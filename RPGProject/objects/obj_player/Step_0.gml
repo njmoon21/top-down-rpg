@@ -9,10 +9,10 @@ x_speed = (right_key - left_key) * move_speed;
 y_speed = (down_key - up_key) * move_speed;
 
 // Collisions
-if place_meeting(x + x_speed, y, obj_wall) == true{
+if place_meeting(x + x_speed, y, obj_blue) == true{
 	x_speed = 0;	
 }
-if place_meeting(x, y + y_speed, obj_wall) == true{
+if place_meeting(x, y + y_speed, obj_blue) == true{
 	y_speed = 0;
 }
 
